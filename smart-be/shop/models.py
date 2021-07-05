@@ -1,12 +1,14 @@
-from django.db import models
 
 # Create your models here.
 from django.db import models
+#from PIL import Image
+
+
 
 class product(models.Model):
     productId = models.AutoField(primary_key=True)
     name = models.CharField("Name", max_length=240, blank=True)
-    price = models.IntegerField("Price", max_length=240, blank=True)
+    price = models.IntegerField("Price",  blank=True)
     description = models.CharField("Description", max_length=240, blank=True)
     image = models.ImageField(upload_to='photos', max_length=254, blank=True)
 
@@ -21,7 +23,7 @@ class tshirt(models.Model):
     brand = models.CharField("Brand", max_length=240, blank=True)
     model = models.CharField("Model", max_length=240, blank=True)
     gender = models.CharField("Gender", max_length=240, blank=True)
-    price = models.IntegerField("Price", max_length=240, blank=True)
+    price = models.IntegerField("Price", blank=True)
     description = models.CharField("Description", max_length=240, blank=True)
     image = models.ImageField(upload_to='photos', max_length=254, blank=True)
 
@@ -34,7 +36,7 @@ class shoes(models.Model):
     brand = models.CharField("Brand", max_length=240, blank=True)
     model = models.CharField("Model", max_length=240, blank=True)
     gender = models.CharField("Gender", max_length=240, blank=True)
-    price = models.IntegerField("Price", max_length=240, blank=True)
+    price = models.IntegerField("Price",  blank=True)
     description = models.CharField("Description", max_length=240, blank=True)
     image = models.ImageField(upload_to='photos', max_length=254, blank=True)
 
@@ -46,7 +48,7 @@ class sweatshirt(models.Model):
     brand = models.CharField("Brand", max_length=240, blank=True)
     model = models.CharField("Model", max_length=240, blank=True)
     gender = models.CharField("Gender", max_length=240, blank=True)
-    price = models.IntegerField("Price", max_length=240, blank=True)
+    price = models.IntegerField("Price",  blank=True)
     description = models.CharField("Description", max_length=240, blank=True)
     image = models.ImageField(upload_to='photos', max_length=254, blank=True)
 
@@ -58,7 +60,7 @@ class jeans(models.Model):
     brand = models.CharField("Brand", max_length=240, blank=True)
     model = models.CharField("Model", max_length=240, blank=True)
     gender = models.CharField("Gender", max_length=240, blank=True)
-    price = models.IntegerField("Price", max_length=240, blank=True)
+    price = models.IntegerField("Price",  blank=True)
     description = models.CharField("Description", max_length=240, blank=True)
     image = models.ImageField(upload_to='photos', max_length=254, blank=True)
 
@@ -70,7 +72,7 @@ class bag(models.Model):
     brand = models.CharField("Brand", max_length=240, blank=True)
     model = models.CharField("Model", max_length=240, blank=True)
     gender = models.CharField("Gender", max_length=240, blank=True)
-    price = models.IntegerField("Price", max_length=240, blank=True)
+    price = models.IntegerField("Price",  blank=True)
     description = models.CharField("Description", max_length=240, blank=True)
     image = models.ImageField(upload_to='photos', max_length=254, blank=True)
 
